@@ -10,7 +10,7 @@ where $\eta$ accounts for the effect of step-size and $\theta$ accounts for the 
 
 The figure on the right shows the initial grid used on the competition and cooperation tab panels with sliders to set the initial step-size, $eta_{0}$, and the initial radius, $r_{0}$. The number of iterations is set by the remaining slider. The grid below the sliders shows its structure at the end of the iterations. A color swatch is shown to the upper right of the grid. This is a new sample passed to the trained grid; its location on the training grid is shown by the white circle.
 
-**Exercise 1**. Leaving $\eta_{0}$ and ${r}_{0}$ at their default values, examine the trained grid after one iteration and after 25 iterations. You will find it helpful to go back-and-forth between the limits on iterations. In what ways are the trained grids similar to each other and in what ways are they different from each other.  *Note: There is a delay in updating the grid as the number of iterations increases*.
+**Exercise 1**. Leaving $\eta_{0}$ and ${r}_{0}$ at their default values, examine the trained grid after one iteration and after 25 iterations. You will find it helpful to go back-and-forth between the limits on iterations. In what ways are the trained grids similar to each other and in what ways are they different from each other. How successful is the SOM in locating the new sample?  *Note: There is a delay in updating the grid as the number of iterations increases*.
 
 **Exercise 2**. Leaving $\eta_{0}$ and ${r}_{0}$ at their default values, examine the trained grid as you step sequentially through all 25 iterations. How does the number of iterations affect the ability of the self-organized map to correctly predict the location of a new sample in the trained grid?
 

@@ -1,0 +1,26 @@
+---
+title: "wrapup"
+output: html_fragment
+---
+
+#### Reproducability of Self-Organizing Maps
+
+The figure on the right shows four self-organizing maps of the rgb color system: each uses 100 iterations over a $10 \times 10$ grid; each uses the same initial values for the step-size, $\eta_{0}$, and for the radius, $r_{0}$; and each uses the same decay constants of 100 for $\eta_{0}$ and for $r_{0}$. The initial rgb values populating the $10 \times 10$ grid and the training samples are drawn at random from the same population of $1.7 \times 10^{7}$ unique sets of rgb values; there is little likelihood, however, that any two maps are built using the same random grid and the same set of training samples. Note that an individual color does not map to the same absolute position within the grid---red does not, in these four examples, own the upper-right corner---it is the relative mapping---the proximity of reds relative to blues and purples---that is meaningful and reproducible. Each of these four maps will take a sample it has not yet seen and reasonably locate its position within the trained grid.  
+
+#### Additional Resources
+
+The treatment of self-organizing maps in this learning module is intentionally limited, emphasizing a more general than technical description of how an SOM algorithm works. The resources gathered here provide a broader range of treatments. The second-to-last resource links to the CRAN page for the `kohonen` package or R functions for creating self-organizing maps. The final resource links to a nice on-line article about the rgb color system.
+
+[Brereton, R.G. "Self organising maps for visualising and modelling". *Chemistry Central Journal* 6 (Suppl 2), S1 (2012)](https://doi.org/10.1186/1752-153X-6-S2-S1). This paper provides an excellent overview of SOMs and includes four brief case studies from analytical chemistry. Mathematical details of the self-organizing map's algorithm are not considered.
+
+["Self Organizing Map in R" created by the R Team, FOSSEE, IIT Bombay](https://static.fossee.in/r/SOM/Start_here.html). This on-line tutorial walks the user through the self-organizing map's algorithm and provides sample `R` code.
+
+[Saeed, M. "Self-Organizing Maps: Theory and Implementation in Python with NumPy"](https://stackabuse.com/self-organizing-maps-theory-and-implementation-in-python-with-numpy/). This on-line tutorial walks the user through the self-organizing map's algorithm and provides sample `Python` code.
+
+[The Bowman Lab. "Tutorial: Self Organizing Maps in R"](https://www.polarmicrobes.org/tutorial-self-organizing-maps-in-r/). This on-line tutorial walks the user through the self-organizing map's algorithm and provides sample `R` code for using the `kohonen` package.
+
+[Wehrens, R.; Kruisselbrink, J. "Flexible Self-Organizing Maps in kohonen 3.0" *Journal of Statistical Software*, October 2018, Volume 87, Issue 7](https://doi: 10.18637/jss.v087.i07). This article provides an overview of the `R` package `kohonen 3.0`, which provides functions for creating self-organizing maps.
+
+[kohonen 3.0.12](https://cran.r-project.org/web/packages/kohonen/index.html). This is an `R` package that provides functions to train self-organizing maps (SOMs). The name of the package refers to Teuvo Kohonen, the inventor of the SOM.
+
+[Gerald Bakker.Color Coding and the RGB Color Space](  https://geraldbakker.nl/psnumbers/rgb-explained.html). This website provides a nice summary of the rgb color system.

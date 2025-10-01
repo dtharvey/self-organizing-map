@@ -1,0 +1,40 @@
+
+
+
+<p>The last of a self-organizing map’s three phases is
+<strong>adaptation</strong> in which the algorithm repeats itself over
+multiple cycles of competition and cooperation. At each step, a node’s
+new rgb value is</p>
+<p><span class="math display">\[{rgb}_{new} = {rgb}_{old} + \eta \times
+\theta \times ({rgb}_{train} - {rgb}_{old})\]</span></p>
+<p>where <span class="math inline">\(\eta\)</span> accounts for the
+effect of step-size and <span class="math inline">\(\theta\)</span>
+accounts for the BMU’s affect on its neighbors. The initial step-size,
+<span class="math inline">\(\eta_{0}\)</span>, and the initial
+radius,<span class="math inline">\({r}_{0}\)</span>, are chosen to
+encourage rapid changes in the rgb values. Over time, both experience an
+exponential decrease in value at each step, allowing for more precise
+adjustments to the rgb values.</p>
+<p>The figure on the right shows the initial grid used on the
+competition and cooperation tab panels with sliders to set the initial
+step-size, <span class="math inline">\(eta_{0}\)</span>, and the initial
+radius, <span class="math inline">\(r_{0}\)</span>. The number of
+iterations is set by the remaining slider. The grid below the sliders
+shows its structure at the end of the iterations. A color swatch is
+shown to the upper right of the grid. This is a new sample passed to the
+trained grid; its location on the training grid is shown by the white
+circle.</p>
+<p><strong>Exercise 1</strong>. Leaving <span class="math inline">\(\eta_{0}\)</span> and <span class="math inline">\({r}_{0}\)</span> at their default values, examine
+the trained grid after one iteration and after 25 iterations. You will
+find it helpful to go back-and-forth between the limits on iterations.
+In what ways are the trained grids similar to each other and in what
+ways are they different from each other. <em>Note: There is a delay in
+updating the grid as the number of iterations increases</em>.</p>
+<p><strong>Exercise 2</strong>. Leaving <span class="math inline">\(\eta_{0}\)</span> and <span class="math inline">\({r}_{0}\)</span> at their default values, examine
+the trained grid as you step sequentially through all 25 iterations. How
+does the number of iterations affect the ability of the self-organized
+map to correctly predict the location of a new sample in the trained
+grid?</p>
+<p><strong>Exercise 3</strong>. Explore the effect of initial step-size
+and initial radius on the trained grid. Are your results consistent with
+what you saw on the cooperation tab panel?</p>

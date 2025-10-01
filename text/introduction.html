@@ -1,0 +1,41 @@
+
+
+
+<p><span class="math inline">\(\require{mhchem}\)</span>A
+self-organizing map (or SOM) uses an unsupervised machine learning
+algorithm to discover an underlying structure in a set of data.</p>
+<div id="what-is-a-machine-learning-algorithm" class="section level4">
+<h4>What is a Machine Learning Algorithm?</h4>
+<p>Machine learning is a form of artificial intelligence that uses a
+computer algorithm to search for an underlying structure in a set of
+data. The algorithm learns by using a set of training samples to make
+predictions about samples it has not yet seen. The figure on the upper
+right provides a simple visual example of untrained and trained data in
+which an initial grid of random colors becomes structured when training
+is complete.</p>
+</div>
+<div id="what-is-unsupervised-learning" class="section level4">
+<h4>What is Unsupervised Learning?</h4>
+<p>Learning is unsupervised when we cannot assign meaningful labels to
+the training data. In the rgb system a color is defined by three
+integers between 0 and 255—one each for red, green, and blue—giving
+<span class="math inline">\(256 \times 256 \times 256 = 1.7 \times
+10^{7}\)</span> distinct colors. This is much more expansive than just
+“red”, “green”, or “blue”. The algorithm learns by grouping together
+samples whose rgb values are similar to each other without prior
+knowledge of what the rgb values represent.</p>
+</div>
+<div id="how-does-a-map-become-self-organized" class="section level4">
+<h4>How Does a Map Become Self-Organized?</h4>
+<p>The figure on the bottom right illustrates a small portion of an SOM
+in the form of a 2D grid of nodes, each with a random set of rgb values.
+A sample from a training set is compared to every node in the grid and
+the sample and node with the closest rgb values—called the best matching
+unit (BMU) and shown here by the thickness of the line that connects
+them—is used to adjust the rgb values of the grid’s nodes, giving
+greater weight to those located near the BMU; this process of
+competition (Which node is the BMU?), cooperation (Which nodes are near
+the BMU and by how much should we adjust their rgb values?), and
+adaptation (How should we extend this to additional training samples?)
+is what it means for the initial grid to become self-organized.</p>
+</div>

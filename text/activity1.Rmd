@@ -1,0 +1,17 @@
+---
+title: "activity1"
+output: html_fragment
+---
+
+To understand how the algorithm for a self-organizing map uses rgb values to train a grid of random samples, it is helpful to feel comfortable with how rgb values work. The three sliders on the right set the individual values for red, green, and blue. Each slider has a range of $0$ to $255$ and is set, initially, to its mid-point value of 128. The square below each slider shows the rgb color associated with that individual slider's value; for example, the square below the slider for red has rgb values of (128, 0, 0). The rectangle at the bottom shows the result of adding together the three individual colors: in this case the color has rgb values (128,128,128). 
+
+**Exercise 1**. Describe the individual colors for red, green, and blue relative to your internal picture of what it means to be red, green, and blue. For example, you might decide that a value of 128 for red is "dark red." If you decrease each individual rgb value to 100,  to 50, and to 0, what affect does it have on the color? If you increase each individual rgb value to 150, to 200, and to 255, what affect does it have on the color? Can you write a simple rule that describes how a color changes as you increase or decrease its individual rgb value?
+
+**Exercise 2**. Set each slider to a value of 100 and describe their additive color, as seen in the rectangle. Repeat using values of 150 and 200. Can you write a simple rule that describes how the additive color changes when all three sliders are set to the same rgb value?
+
+**Exercise 3**. Set two of the three sliders to rgb values of 255 and set the remaining slider to a value of 0. Describe what you see. Repeat using the other two possible combinations of rgb values.
+
+**Exercise 4**. If you are restricted to rgb values of $0$ and $255$, how many distinct colors are there and what names would you assign to them?
+
+**Exercise 5**. Experiment with the three sliders and see if you can find a combination that satisfies your sense of what it means to be orange.
+

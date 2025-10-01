@@ -1,0 +1,16 @@
+---
+title: "activity2"
+output: html_fragment
+---
+
+The algorithm for a self-organizing map has three phases, the first of which is a **competition** to identify which of the grid's nodes is closest to a sample drawn from the training set. This competition is based on the distance, $d$, between their respective rgb values
+
+$$d = \sqrt{({red}_{node} - {red}_{train})^2 + ({green}_{node} - {green}_{train})^2 + ({blue}_{node} - {blue}_{train})^2)}$$
+
+where ${red}_{node}$ is the node's value for red, ${red}_{train}$ is the training sample's value for red, ${green}_{node}$ is the node's value for green, ${green}_{train}$ is the training sample's value for green, and ${blue}_{node}$ is the node's value for blue, and ${blue}_{train}$ is the training sample's value for blue. The shorter the distance, the closer the rgb values are to each other. The node in the grid closest to the training sample is the best matching unit, or BMU. The grid on the right has 100 nodes selected at random from the population of $1.7 \times 10^7$ possible combinations of rgb values. Individual nodes are defined by their position within the grid using the row number (1 to 10 from bottom-to-top) and the column number (1 to 10 from left-to-right); a small white circle shows the node defined by the sliders. Information about the training sample is shown below the grid as its set of rgb values, which are (182,14,90); a color swatch provides a visual sense of the training sample's color.  
+
+**Exercise 1**. The slider's default position is [1,1], using the format [row number, column number]. Use the rgb values for [1,1] of (73,153,61) to verify that the distance between the training sample and the node is 179.
+
+**Exercise 2** Use the color swatches in the grid to predict which of the nodes in the four corners of the grid---[1,1], [1,10], [10,1], and [10,10]---is closest to the training sample and which is furthest. Use the sliders to check your prediction.
+
+**Exercise 3**. Which of the grid's 100 nodes is closest to the training sample? Use the color swatches for the grid's nodes and the training sample's color swatch to help you narrow possibilities.

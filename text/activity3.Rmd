@@ -1,0 +1,22 @@
+---
+title: "activity3"
+output: html_fragment
+---
+
+Having identified the initial grid's BMU as the node in the third row and in the second column, the second phase of the self-organizing map's algorithm is to adjust the BMU's rgb values so they are closer to those of the training sample. We also adjust the rgb values for nodes in the neighborhood of the BMU, with the size of the adjustment depending on how close, in space, the node is to the BMU; this second step is described as **cooperation** because the BMU influences the rgb values of other nodes. Mathematically, we express this as
+
+$${rgb}_{new} = {rgb}_{old} + \text{adjustment} \times  ({rgb}_{train} - {rgb}_{old})$$ 
+
+There are two contributions to this adjustment: how close a node is to the BMU in the grid and how much of the difference between the rgb values of the training set and the grid is applied to the node. The two sliders on the upper right account for these adjustments. The slider for radius defines a circle centered on the BMU; only nodes inside the circle have their rgb values adjusted. The slider for step-size defines the fraction of $({rgb}_{train} - {rgb}_{old})$ applied to a node. The upper figure is the original, untrained grid with the BMU identified by the node with the small white circle. The other figure shows each node's new rgb values (as color swatches) after applying the adjustments.
+
+**Exercise 1**. Leave the radius at its default value of 5 and explore how a change in step-size affects the rgb values of the grid's nodes. Explain why your observations make sense for a step-size of 0 and for a step-size of 1.
+
+**Exercise 2**. Leave the step-size at its default value of 0.5 and explore how a change in radius affects the rgb values of the grid's nodes. Explain why your observations make sense for a radius of 1 and for a radius of 10.
+
+**Exercise 3**. If you want to see a large change in the rgb values of the grid's nodes, should you favor a larger or a smaller radius, and/or a larger or a smaller step-size?
+
+
+
+
+
+

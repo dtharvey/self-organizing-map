@@ -19,6 +19,8 @@ The treatment of self-organizing maps in this learning module is intentionally l
 
 [The Bowman Lab. "Tutorial: Self Organizing Maps in R"](https://www.polarmicrobes.org/tutorial-self-organizing-maps-in-r/). This on-line tutorial walks the user through the self-organizing map's algorithm and provides sample `R` code for using the `kohonen` package.
 
+[Chen, D. Z. "A New Method for Studying the Periodic System Based on a Kohonen Neural Network, *J. Chem. Educ.*, **2010**, *87*, 433-434](https://doi:10.1021/ed800125v). This paper describes the use of a self-organizing map (equivalent to a Kohonen neural network) to determine the location of elements within the periodic table.
+
 [Wehrens, R.; Kruisselbrink, J. "Flexible Self-Organizing Maps in kohonen 3.0" *Journal of Statistical Software*, October 2018, Volume 87, Issue 7](https://doi: 10.18637/jss.v087.i07). This article provides an overview of the `R` package `kohonen 3.0`, which provides functions for creating self-organizing maps.
 
 [kohonen 3.0.12](https://cran.r-project.org/web/packages/kohonen/index.html). This is an `R` package that provides functions to train self-organizing maps (SOMs). The name of the package refers to Teuvo Kohonen, the inventor of the SOM.

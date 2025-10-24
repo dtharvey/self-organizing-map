@@ -3,4 +3,4 @@ This learning module introduces self-organizing maps as a means for finding an u
 
 required packages: `shiny`, `shinythemes`
 
-to run locally in a browser window enter `shiny::runGitHub("self-organizing-map","dtharvey", launch.browser = TRUE)` in console
+to run locally in a browser window enter `shiny::runGitHub("self-organizing-map","dtharvey", launch.browser = TRUE)` in the console
